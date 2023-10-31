@@ -41,6 +41,10 @@ int main() {
     return 0;
 }
 
+
+
+
+
 /*  Another solution using ctime library to get the current time and the due date time 
 
 #include <iostream>
@@ -73,10 +77,40 @@ int main() {
 
     return 0;
 }
+ */
 
-    the difference between the two solutions is that the first one uses the chrono library to get the current time and the due date time, 
+
+
+
+
+    /*the difference between the two solutions is that the first one uses the chrono library to get the current time and the due date time, 
     while the second one uses the ctime library to get the current time and the due date time.
     the first solution is more modern and more accurate than the second one.
-    runtime of the first solution is O(1) while the runtime of the second solution is O(n).
-    */
+    runtime of the first solution is O(1) while the runtime of the second solution is O(n). */
 
+
+
+
+
+
+
+
+
+/*
+    Another solution where the user enters the due date and the current time
+
+#include <iostream>
+
+using namespace std;
+int main() {
+    int dueHour, dueMinute, currentHour, currentMinute;
+    cout << "Enter the due date (hour and minutes): ";
+    cin >> dueHour >> dueMinute;
+    cout << "Enter the current time (hour and minutes): ";
+    cin >> currentHour >> currentMinute;
+    int minutesDiff = (dueHour - currentHour) * 60 + (dueMinute - currentMinute);
+    cout << "Number of minutes between current time and due date: " << minutesDiff << "\n";
+    return 0;
+}
+
+*/

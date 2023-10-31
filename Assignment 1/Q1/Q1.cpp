@@ -52,4 +52,5 @@ int main() {
     cout << "Minimum: " << minimum << "\n";
 
     return 0;
+    
 }
